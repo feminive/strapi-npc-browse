@@ -1,0 +1,1 @@
+# This module was developed for personal use. You won't have any use for it, don't waste your time.

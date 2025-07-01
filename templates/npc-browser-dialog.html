@@ -1,0 +1,62 @@
+<div class="strapi-npc-browser">
+  <div class="browser-layout">
+    <!-- Campaign Sidebar -->
+    <div class="campaign-sidebar">
+      <h4 class="sidebar-title">Campanhas</h4>
+      <div class="campaign-filters">
+        <button class="campaign-filter active" data-campaign="" title="Mostrar todos os NPCs">
+          <i class="fas fa-globe"></i>
+          <span>Todas</span>
+        </button>
+        {{#each campaigns}}
+        <button class="campaign-filter" data-campaign="{{this}}" title="Filtrar por {{this}}">
+          <i class="fas fa-flag"></i>
+          <span>{{this}}</span>
+        </button>
+        {{/each}}
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="npc-search-container">
+        <input type="text" id="npc-search" placeholder="{{localize 'STRAPI_NPC.SearchPlaceholder'}}" />
+        <i class="fas fa-search"></i>
+      </div>
+      
+      <div class="npc-grid" id="npc-grid">
+        {{#each npcs}}
+        <div class="npc-item" data-npc-id="{{this.id}}" title="{{localize 'STRAPI_NPC.ClickToPost'}}">
+          <div class="npc-image-container">
+            <img src="{{this.img}}" alt="{{this.name}}" class="npc-image" loading="lazy" />
+            <div class="npc-overlay">
+              <i class="fas fa-comment-alt"></i>
+            </div>
+          </div>
+          <div class="npc-info">
+            <h4 class="npc-name">{{this.name}}</h4>
+            {{#if this.content}}
+            <p class="npc-preview">{{truncate this.content 50}}</p>
+            {{/if}}
+            <div class="npc-tags">
+              {{#if (hasValue this.campanha)}}
+              <span class="npc-tag campaign-tag">{{this.campanha}}</span>
+              {{/if}}
+              {{#if (hasValue this.nucleo)}}
+              <span class="npc-tag nucleo-tag">{{this.nucleo}}</span>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      
+      {{#unless npcs}}
+      <div class="no-npcs-message">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>{{localize 'STRAPI_NPC.NoNpcsFound'}}</p>
+      </div>
+      {{/unless}}
+    </div>
+  </div>
+</div>

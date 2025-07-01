@@ -1,0 +1,42 @@
+{
+  "id": "strapi-npc-browser",
+  "title": "Strapi NPC Browser",
+  "description": "Browse and display NPCs from Strapi API in Foundry VTT",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Boifubá"
+    }
+  ],
+  "scripts": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "templates": [
+    "templates/npc-browser-dialog.html"
+  ],
+  
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "pt",
+      "name": "Português",
+      "path": "lang/pt.json"
+    }
+  ],
+   "url": "https://gitlab.com/boifuba/strapi-npc-browser/",
+  "manifest": "https://github.com/Boifuba/strapi-npc-browser/releases/download/packs/module.json",
+  "download": "https://github.com/Boifuba/strapi-npc-browser/releases/download/packs/strapi-npc-browser.zip",
+  "license": "MIT",
+  "readme": "README.md"
+}

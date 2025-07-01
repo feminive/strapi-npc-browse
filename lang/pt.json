@@ -1,0 +1,15 @@
+{
+  "STRAPI_NPC": {
+    "BrowseNpcs": "Navegar NPCs",
+    "BrowserTitle": "Navegador de NPCs Strapi",
+    "SearchPlaceholder": "Buscar NPCs por nome, conteúdo ou núcleo...",
+    "ClickToPost": "Clique para postar no chat",
+    "FetchingNpcs": "Buscando NPCs da API...",
+    "FetchError": "Erro ao buscar NPCs",
+    "NoNpcsFound": "Nenhum NPC encontrado",
+    "NpcPosted": "NPC postado no chat",
+    "ChatError": "Erro ao postar no chat",
+    "MacroCreated": "Macro criada",
+    "AllCampaigns": "Todas as Campanhas"
+  }
+}
