@@ -35,8 +35,8 @@
     }
   ],
    "url": "https://gitlab.com/boifuba/strapi-npc-browser/",
-  "manifest": "https://github.com/Boifuba/strapi-npc-browser/releases/download/packs/module.json",
-  "download": "https://github.com/Boifuba/strapi-npc-browser/releases/download/packs/strapi-npc-browser.zip",
+  "manifest": "https://github.com/feminive/strapi-npc-browse/releases/download/packs/module.json",
+  "download": "https://github.com/feminive/strapi-npc-browse/releases/download/packs/strapi-npc-browser.zip",
   "license": "MIT",
   "readme": "README.md"
 }

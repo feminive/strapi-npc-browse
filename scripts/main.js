@@ -368,15 +368,14 @@ class StrapiNpcBrowser {
     
     const chatContent = `
       <div class="strapi-npc-chat-card">
+                <img src="${npc.img}" alt="${npc.name}" class="npc-portrait" />
+
         <div class="npc-header">
-          <img src="${npc.img}" alt="${npc.name}" class="npc-portrait" />
-          <div class="npc-title-info">
-            <h3 class="npc-name">${npc.name}</h3>
-            ${campaignInfo}
-            ${nucleoInfo}
-          </div>
+         
         </div>
         <div class="npc-content">
+                    <h3 class="npc-name">${npc.name}</h3>
+
           ${npc.content ? `<p>${npc.content}</p>` : '<p><em>No description available</em></p>'}
         </div>
       </div>
